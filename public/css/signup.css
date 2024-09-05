@@ -1,0 +1,158 @@
+.container-signup{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.form-input{
+    background-color: rgba(192, 202, 135, 0.548);
+    align-items: flex-end;
+    max-width: 100%;
+    width: 450px;
+    margin:50px auto;
+    height: auto;
+    border-radius: 9px;
+    border: 2px solid salmon;
+}
+input {
+    border-radius: 8px;
+    border: 1px solid rgb(111, 215, 241);
+    width: 100%;
+    height: 30px;
+    text-align: left;
+}
+.user-first-name,
+.user-last-name,
+.user-email,
+.user-password,
+.user-user-name
+{
+    font-size: 16px;
+    padding-left: 20px;
+}
+h2{
+    padding: 8px;
+    text-align: center;
+}
+hr{
+    color: rgb(141, 25, 4);
+    border: 2px solid  ;
+}
+.user-first-name,
+.user-last-name,
+.user-email,
+.user-password,
+.user-user-name
+{
+width: 80%;
+padding: 10px;
+align-items: center;
+margin: auto;
+font-size: 16px;
+}
+.input-1{
+    font-size: 16px;
+    padding-left: 20px;
+   
+}
+
+ button{
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(228, 25, 52);
+    border-radius: 9px;
+    cursor: pointer;
+    margin: 0;
+    font-size: 18px;
+}
+.button-sub-res{
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-around;
+padding: 10px;
+margin:auto;
+}
+.user-submit,
+.user-reset{
+    width: 100%;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sign-up-sing-in{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height:auto;
+    margin: auto;
+    padding: 10px ;
+}
+.sign-up-sing-in a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 3px;
+}
+
+ .image-sign-up {
+    max-width: 100%;
+    margin:50px 0;
+    height: auto;
+    padding: 0;
+}
+
+.image-sign-up img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    max-height: 450px;
+    margin:0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container-signup {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .form-input {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 20px 0; /* Adjust margin for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .image-sign-up {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+
+    .image-sign-up img {
+        max-width: 100%; /* Ensure image scales correctly on smaller screens */
+    }
+
+    .button-sub-res {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
+ 
+@media (max-width: 480px) {
+    .form-input {
+        width: 95%; /* Further adjust width for very small screens */
+        margin: 10px 0; /* Adjust margin for very small screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust font size for small screens */
+    }
+
+    button {
+        padding: 15px; /* Adjust padding for small buttons */
+        font-size: 14px; /* Adjust font size for small buttons */
+    }
+}

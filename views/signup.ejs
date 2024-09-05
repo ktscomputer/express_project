@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Irshad">
+    <meta name="description" content="signup page ">
+    <meta name="keyword" content="signup sample project web development Irshadprojects  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container-signup">
+        <form method="post" action="/signup">
+            <div class="form-input">
+                <h2>Sign Up</h2>
+                <% if(error) { %> 
+                    <p style="color: red;"> <%= error %></p>
+                   <% } %>
+                <hr>
+                <div class="user-first-name">
+                    <label for="first-name">
+                    </label>First Name:
+                    <input type="text" id="first-name" name="first-name" required class="user-name">
+                </div>
+                <div class="user-last-name">
+                    <label for="last-name">
+                    </label>Last Name:
+                    <input type="text" id="last-name" name="last-name" required class="user-name">
+                </div>
+                <div class="user-email">
+                    <label for="email">
+                    </label>Email:
+                    <input type="email" id="email" name="email" required class="user-name">
+                </div>
+                <div class="user-password">
+                    <label for="password">
+                    </label>Password:
+                    <input type="password" id="password" name="password" required class="user-name">
+                </div>
+                <div class="button-sub-res">
+                    <div><button type="submit" class="user-submit">Subimt</button></div>
+                    <div><button type="reset" class="user-reset">Reset</button></div>
+                </div>
+                <div class="sign-up-sing-in">
+                    <p>Have account <a href="login.ejs" style="background-color: aqua;">SignIn here</a></p>
+                </div>
+            </div>
+
+        </form>
+        <div class="image-sign-up">
+                <img src="./images/signup-icon.png" alt="login-pic">
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

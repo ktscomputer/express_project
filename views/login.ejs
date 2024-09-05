@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Irshad">
+    <meta name="description" content="login page ">
+    <meta name="keywords" content="loginpage Irshadprojects  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <h4>Login</h4>
+            <% if (error) { %> 
+                <p style="color: red;"><%= error %></p>
+            <% } %>
+            <form  action="/login" method="post">
+            <div class="user-email">
+                <label for="email" >Email</label><br>
+                <input type="email"  id="email" name="email" required class="email-input" >
+            </div>
+            <div class="user-password">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required class="password-input">
+            </div>
+            <div class="log-btn">
+                <div class="submit-btn">
+                <button type="submit" class="log-bnt-login" >Login</button>
+                </div>
+                <div class="sign-up">
+                    <p><a href="signup.html">Create new account</a></p>
+                </div>
+            </div>
+            
+        </form>
+        </div>
+        <div class="image">
+            <div>
+                <img src="./images/login-icon.png" alt="login-pic">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

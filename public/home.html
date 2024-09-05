@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irshad's Profile</title>
+  <meta name="author" content="Irshad">
+  <meta name="description" content="Personal Profile Page of Irshad">
+  <meta name="keyword" content="profile,portfoio,Irshad web development">
+  <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="nav-logo" href="index.html"><img src="Images/KT_s-removebg-preview.png" alt="Logo"></a>
+      <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+    </div>
+    <div class="nav-menu">
+      <a href="home.html">Home</a>
+      <a href="#proje">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html">Logout</a>
+      <!-- <div id="dark-mode-toggle" class="dark-mode-toggle"><i class="fas fa-moon"></i></div> -->
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </div>
+  </nav>
+
+  <header>
+    <!-- <img src="../Images/photo.png" alt="Irshad photo"> -->
+    <h2>Are you looking for <span class="about-me"></span></h2>
+    <!-- <p>Hello ! I'm Irshad, and here's a little Info about Me.</p> -->
+    <h1>Welcome to KT's hub.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente qui dolores voluptas, ex repellat sit. At
+      obcaecati assumenda vero quasi nam. Soluta nihil, quisquam ducimus architecto adipisci libero dolorem numquam.
+    </p>
+  </header>
+
+  <div class="content-container">
+    <!-- Skills -->
+    <section>
+      <h2>My Technical Skills</h2>
+      <div class="skills-list">
+        <ul class="skills-list">
+          <li>Web Development</li>
+          <li>Administration</li>
+          <li>Networking</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Horizondal rolling icons -->
+    <section class="horizontal-scroll">
+      <h2>Popular Web Languages</h2>
+      <div class="icon-container">
+        <img src="./images/1.png" alt="First">
+        <img src="./images/10.png" alt="Ten">
+        <img src="./images/2.png" alt="Two">
+        <img src="./images/3.png" alt="Three">
+        <img src="./images/4.png" alt="Four">
+        <img src="./images/5.png" alt="FIve">
+        <img src="./images/8.png" alt="Eight">
+        <img src="./images/9.png" alt="Nine">
+      </div>
+    </section>
+
+    <hr>
+    <!-- Progress-bar Section -->
+    <section id="programming-languages">
+      <h2>Programming Languages</h2>
+      <div class="skill">
+        <p>C</p>
+        <div class="progress-bar" data-progress="80"></div>
+      </div>
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar" data-progress="90"></div>
+      </div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar" data-progress="90"></div>
+      </div>
+    </section>
+    <hr>
+    <!-- Projects Section -->
+    <section id="proje">
+      <h2 >My Projects</h2>
+      <p>Take a look at some of my works.</p>
+      <section id="projects">
+        <div class="project-thumbnail">
+          <div class="thumbnail-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGitdv4egQVJo9oAB1y1Szt65IIHYnSQ_bA&s"
+              alt="CCTV">
+            <h3>CCTV</h3>
+            <p>Description</p>
+            <a href="#" class="btn know-more" data-modal-target="#projectModal1">Know More</a>
+          </div>
+        </div>
+        <div class="project-thumbnail">
+          <div class="thumbnail-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNpJyBHROjrtgC8L3ug1WS13vj3aOxWhXGpw&s"
+              alt="Networking">
+            <h3>NETWORKING</h3>
+            <p>Description</p>
+            <a href="" class="btn">Know More</a>
+          </div>
+        </div>
+        <!-- <div class="project-thumbnail">
+          <div class="thumbnail-content">
+            <img src="/Images/networking.png" alt="Networking">
+            <h3>EPBAX</h3>
+            <p>Description</p>
+            <a href="" class="btn">Know More</a>
+          </div>
+        </div> -->
+        <div class="project-thumbnail">
+          <div class="thumbnail-content">
+            <img src="/Images/biometric.png" alt="Networking">
+            <h3>BIO-METRIC</h3>
+            <p>Description</p>
+            <a href="" class="btn">Know More</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <hr>
+    <!-- Contact me form -->
+    <section>
+      <h2 id="contact">Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn-send"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </section>
+    <hr>
+    <!-- Contact Me -->
+    <section>
+      <h2>Contact Information</h2>
+      <p>Let's connect</p>
+      <a href="mailto:irshad2934@gmail.com" class="icon-link email-icon" target="_blank"><i
+          class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/ktscomputer" class="icon-link linkedin-icon" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com/ktscomputer" class="icon-link facebook-icon" target="_blank"><i
+          class="fab fa-facebook"></i></a>
+      <a href="https://x.com/ktscomputer" class="icon-link x-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/ktscomputer" class="icon-link instagram-icon" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+    </section>
+  </div>
+  <!-- Footer section -->
+
+  <footer>
+    <p>&copy; KT's Hub Malappuram 2024</p>
+  </footer>
+
+  <!-- popup projects -->
+
+  <div id="projectModal1" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Project Title1</h2>
+      <hr>
+      <div class="modal-body">
+        <div class="modal-row">
+          <div class="column description">
+            <p>Short Projet Overview:
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <a href="https://youtu.be/m9Pgsf-W008" target="_blank" class="github-link"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="column image-carousel">
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <img src="/Images/cctv.png" alt="fisrt">
+                <img src="Images/epbax.png" alt="two">
+                <img src="Images/biometric.png" alt="three">
+                <img src="Images/networking.png" alt="four">
+              </div>
+              <a class="prev" onclick="moveSlide(-1)">&lt;</a>
+              <a class="next" onclick="moveSlide(1)">&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-row">
+          <div class="column">
+            <h3>porject details</h3>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Project video</h3>
+            <iframe 
+              src="https://www.youtube.com/embed/EfAl9bwzVZk"
+              title="JavaScript Full Course for Beginners | Complete All-in-One Tutorial | 8 Hours" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
