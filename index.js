@@ -43,10 +43,10 @@ app.use(
 
 //Routes
 
-app.get("/login", (req, res) => {
+app.get("/", (req, res) => {
   const error = req.query.error || "";
-  // res.render("login", { error }); ejs file render
-  res.sendFile(path.join(__dirname,'public','login.html'))
+   // res.render("login", { error }); // ejs file render
+   res.sendFile(path.join(__dirname,'public','login.html'))
 });
 
 app.post("/login", async (req, res) => {

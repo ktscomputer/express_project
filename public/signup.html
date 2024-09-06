@@ -17,7 +17,7 @@
     <div class="container-signup">
         <form method="post" action="/signup">
             <div class="form-input">
-                <h2>Sign Up</h2>
+                <h1 class="sign-text">Sign Up</h1>
                 <hr>
                 <div class="user-first-name">
                     <label for="firstname">
@@ -61,7 +61,11 @@
 
                  </div>
     </div>
-
+    <footer class="footer-list">
+        <p >&copy; <span id="current-year"></span> KT'S Hub Malappuram</p>
+    </footer>
+<script> document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

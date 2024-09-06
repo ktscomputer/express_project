@@ -18,7 +18,8 @@
     <div class="container">
         <img src="./images/bgicon.png" alt="bgicon" class="bg-icon">
         <div class="login-section">
-            <h4>Login</h4>
+            <h1>Login </h1>
+            <hr class="line">
             <p id="error-message" style="color: red;"></p>
             <form  action="/login" method="post">
             <div class="user-email">
@@ -35,10 +36,10 @@
             </div>
             <div class="log-btn">
                 <div class="submit-btn">
-                <button type="submit" class="log-bnt-login" >Login</button>
+                    <button type="submit" class="log-bnt-login" >Login</button>
                 </div>
                 <div class="sign-up">
-                    <p><a href="signup.html">Create new account</a></p>
+                    <p><a href="signup.html">Create a new account</a></p>
                 </div>
             </div>
             
@@ -50,6 +51,9 @@
             </div> -->
         </div>
     </div>
+    <footer class="footer-list">
+    <p >&copy; <span id="current-year"></span> KT'S Hub Malappuram</p>
+</footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
@@ -57,6 +61,7 @@
       document.getElementById('error-message').textContent = params.get('error');
     }
   })
+  document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
     
 </body>
